@@ -1,0 +1,9 @@
+ls -ltr bkup | tail -10
+
+echo "Enter file name : "
+read myfile
+
+
+cp App.js bkup/$myfile.js.`date +%Y%M%d%H%M%S`
+
+ls -ltr bkup | tail -10
